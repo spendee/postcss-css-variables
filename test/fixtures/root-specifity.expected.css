@@ -1,0 +1,8 @@
+.hello.world {
+	background: red;
+	width: 32px;
+}
+
+:root.dark .hello.world {
+	width: 64px;
+}

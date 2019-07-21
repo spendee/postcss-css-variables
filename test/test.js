@@ -129,7 +129,12 @@ describe('postcss-css-variables', function() {
 
 	test('should work with `!important` variable declarations', 'important-variable-declaration');
 
-
+	
+	describe(':root specifiers', () => {
+		test('specific :root classifiers', 'root-specifity');
+		test('specific :root classifiers in media queries', 'root-media-specifity');
+		test('specific :root classifiers in media queries + pure', 'root-media-specifity-combined', { preserveAtRulesOrder: true });
+	})
 
 	describe('with at-rules', function() {
 		test('should add rule declaration of property in @media', 'media-query');

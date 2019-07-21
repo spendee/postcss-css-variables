@@ -1,0 +1,27 @@
+:root {
+	--size: 32px;
+}
+
+:root.dark {
+  --size: 64px;
+}
+
+
+@media (test) {
+  :root {
+    --size: 96px;
+  }
+
+  :root.dark {
+    --size: 128px;
+  }
+}
+
+:root {
+  --test-size: var(--size);
+}
+
+.hello.world {
+  background: red;
+	width: var(--test-size);
+}

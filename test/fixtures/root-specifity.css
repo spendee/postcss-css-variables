@@ -1,0 +1,16 @@
+:root {
+	--size: 32px;
+}
+
+:root.dark {
+  --size: 64px;
+}
+
+:root {
+  --test-size: var(--size);
+}
+
+.hello.world {
+  background: red;
+	width: var(--test-size);
+}

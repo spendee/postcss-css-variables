@@ -1,0 +1,21 @@
+.hello.world {
+	background: red;
+	width: 32px;
+}
+
+@media (test) {
+	.hello.world {
+		width: 96px;
+	}
+}
+
+@media (test) {
+	:root.dark .hello.world {
+		width: 128px;
+	}
+}
+
+
+:root.dark .hello.world {
+	width: 64px;
+}
