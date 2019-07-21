@@ -12,6 +12,7 @@ var extend = require('extend');
 var shallowCloneNode = require('./lib/shallow-clone-node');
 var resolveValue = require('./lib/resolve-value');
 var resolveDecl = require('./lib/resolve-decl');
+var isPieceRootSpecificSelector = require('./lib/is-piece-root-specific-selector')
 
 
 // A custom property is any property whose name starts with two dashes (U+002D HYPHEN-MINUS)
@@ -179,7 +180,8 @@ module.exports = postcss.plugin('postcss-css-variables', function(options) {
 					variablesUsed: valueResults.variablesUsed,
 					parent: splitOutRule,
 					// variables inside root or at-rules (eg. @media, @support)
-					isUnderAtRule: splitOutRule.parent.type === 'atrule'
+					isUnderAtRule: splitOutRule.parent.type === 'atrule',
+					isRootSpecific: isPieceRootSpecificSelector(decl.parent.selector)
 				});
 			});
 
