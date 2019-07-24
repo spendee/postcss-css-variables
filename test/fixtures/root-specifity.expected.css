@@ -3,6 +3,6 @@
 	width: 32px;
 }
 
-:root.dark .hello.world {
+.dark .hello.world {
 	width: 64px;
 }

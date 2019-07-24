@@ -1,0 +1,16 @@
+:root {
+  --pale-grey: #f6f9fb;
+  --color-default-hover-bg: var(--pale-grey);
+}
+
+:root:global(.dark) {
+  --pale-grey: #3E4041;
+}
+
+:root {
+  --bg-hover-color: var(--color-default-hover-bg);
+}
+
+.link:focus > *, .link:hover > *, .link:active > *, .link.active > * {
+  background: var(--bg-hover-color);
+}

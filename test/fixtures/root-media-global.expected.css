@@ -1,0 +1,9 @@
+.value {
+  color: #324c5b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :global(.dark) .value {
+  color: #FFFFFF;
+  }
+}

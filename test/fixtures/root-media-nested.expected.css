@@ -1,0 +1,19 @@
+.navbar{
+  color: root-color-neutral;
+}
+
+.gray .navbar {
+  color:root-gray-pale-gray;
+}
+
+.dark .navbar {
+  color:root-dark-pale-gray;
+}
+
+.gray .navbar {
+  color:root-gray-pale-gray;
+}
+
+.dark .navbar {
+  color:root-dark-pale-gray;
+}

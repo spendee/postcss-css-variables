@@ -1,6 +1,6 @@
 {
   "name": "postcss-css-variables",
-  "version": "0.13.1-spendee",
+  "version": "0.13.2-spendee",
   "description": "PostCSS plugin to transform CSS Custom Properties(CSS variables) syntax into a static representation",
   "keywords": [
     "postcss",
@@ -17,7 +17,8 @@
     "escape-string-regexp": "^1.0.3",
     "extend": "^3.0.1",
     "postcss": "^6.0.8",
-    "postcss-selector-parser": "^6.0.2"
+    "postcss-selector-parser": "^6.0.2",
+    "postcss-value-parser": "^4.0.0"
   },
   "devDependencies": {
     "bluebird": "^3.5.0",

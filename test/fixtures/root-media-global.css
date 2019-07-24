@@ -1,0 +1,17 @@
+:root {
+  --dark-grey-blue: #324c5b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:global(.dark) {
+    --dark-grey-blue: #FFFFFF;
+  }
+}
+
+:root {
+  --text-label-color: var(--dark-grey-blue);
+}
+
+.value {
+  color: var(--text-label-color);
+}

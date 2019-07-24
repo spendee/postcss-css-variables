@@ -4,11 +4,11 @@
 }
 
 @media (test) {
-	:root.dark .hello.world {
+	.dark .hello.world {
 		width: 128px;
 	}
 }
 
-:root.dark .hello.world {
+.dark .hello.world {
 	width: 64px;
 }

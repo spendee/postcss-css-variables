@@ -1,0 +1,11 @@
+@media (max-width: 100px) {
+  .value {
+    color: #324c5b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark .value {
+    color: #FFFFFF;
+    }
+  }
+}

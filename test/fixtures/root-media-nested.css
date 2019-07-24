@@ -1,0 +1,22 @@
+:root {
+  --pale-grey: root-pale-gray;
+  --color-neutral: root-color-neutral;
+}
+
+:root.dark {
+  --pale-grey: root-dark-pale-gray;
+  --color-neutral: var(--pale-grey);
+}
+
+:root.gray {
+  --pale-grey: root-gray-pale-gray;
+  --color-neutral: var(--pale-grey);
+}
+
+:root {
+  --navbar-icon-bg-color: var(--color-neutral);
+}
+
+.navbar {
+  color: var(--navbar-icon-bg-color);
+}

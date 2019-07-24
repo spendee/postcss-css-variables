@@ -134,6 +134,10 @@ describe('postcss-css-variables', function() {
 		test('specific :root classifiers', 'root-specifity');
 		test('specific :root classifiers in media queries', 'root-media-specifity');
 		test('specific :root classifiers in media queries + pure', 'root-media-specifity-combined', { preserveAtRulesOrder: true });
+		test('specific :root classifiers in media queries', 'root-media-test');
+		test('global :root classifiers in media queries in layout', 'root-media-global');
+		test('global * :root classifiers in media queries in layout', 'root-media-star');
+		test('nested global :root classifiers in media queries in layout', 'root-media-nested');
 	})
 
 	describe('with at-rules', function() {

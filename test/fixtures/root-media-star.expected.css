@@ -1,0 +1,27 @@
+.link:focus > * {
+  background: #f6f9fb;
+}
+:global(.dark) .link:focus > * {
+  background: #3E4041;
+}
+
+.link:hover > * {
+  background: #f6f9fb;
+}
+:global(.dark) .link:hover > * {
+  background: #3E4041;
+}
+
+.link:active > * {
+  background: #f6f9fb;
+}
+:global(.dark) .link:active > * {
+  background: #3E4041;
+}
+
+.link.active > * {
+  background: #f6f9fb;
+}
+:global(.dark) .link.active > * {
+  background: #3E4041;
+}
